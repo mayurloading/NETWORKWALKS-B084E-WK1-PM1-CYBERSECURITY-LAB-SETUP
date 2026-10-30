@@ -8,13 +8,13 @@ I configured the lab on a private virtual network (NAT Network) so that I can ad
 🎯 Objectives
 My objectives for this project were to:
 
-Install VirtualBox.
-Create a private NAT Network for my lab.
-Import and run Kali Linux as a virtual machine.
-Verify the IP address of my Kali VM.
-Check network connectivity and DNS resolution.
-Verify that Nmap is installed and working.
-Document the complete setup process.
+Install VirtualBox.\
+Create a private NAT Network for my lab.\
+Import and run Kali Linux as a virtual machine.\
+Verify the IP address of my Kali VM.\
+Check network connectivity and DNS resolution.\
+Verify that Nmap is installed and working.\
+Document the complete setup process.\
 
 🛡️ Purpose of the Lab
 I built this lab as an isolated and controlled environment for cybersecurity learning and authorized security testing, such as:
@@ -27,18 +27,19 @@ Web security testing
 Security-tool experimentation
 ⚠️ Important: I will only use this laboratory on systems that I own or have explicit permission to test. I will not use the lab or its tools to attack unauthorized systems.
 
-⚙️ Lab Configuration
-🧩 Component	⚙️ Configuration
-🖥️ Host OS	Windows
-🧰 Hypervisor	Oracle VirtualBox
-🐉 Security OS	Kali Linux 2026.3 (kali-linux-2026.3-virtualbox-amd64)
-💽 VM Name	My Fresh Kali Linux
-🌐 Virtual Network	NAT Network (NatNetwork)
-📡 Network Address	10.0.0.0/24
-🐧 Kali IP Address	10.0.0.2/24
-🚪 Default Gateway	10.0.0.1
-🌍 DNS Server	8.8.8.8
-🪜 Lab Setup Procedure
+# ⚙️ Lab Configuration
+
+| 🧩 Component | ⚙️ Configuration |
+|---|---|
+| 🖥️ Host OS | Windows |
+| 🧳 Hypervisor | Oracle VirtualBox |
+| 🐉 Security OS | Kali Linux 2026.3 (`kali-linux-2026.3-virtualbox-amd64`) |
+| 📀 VM Name | My Fresh Kali Linux |
+| 🌐 Virtual Network | NAT Network (`NatNetwork`) |
+| 📡 Network Address | `10.0.0.0/24` |
+| 🐧 Kali IP Address | `10.0.0.2/24` |
+| 🚪 Default Gateway | `10.0.0.1` |
+| 🌍 DNS Server | `8.8.8.8` |
 Step 1. Install VirtualBox
 I installed Oracle VirtualBox as my hypervisor. The screenshot below shows VirtualBox Manager ready to use.
 ![alt text](<Screenshot 2026-10-29 215516.png>)
@@ -72,12 +73,14 @@ ip a output
 ![alt text](<Screenshot 2026-10-29 221930.png>)
 
 
-🔎 Lab Verification
-✅ Test	🧾 Command	🎯 Result
-🌐 Check IP address	ip a	eth0 = 10.0.0.2/24 ✔️
-📡 Test gateway	ping 10.0.0.1	5/5 replies, 0% packet loss ✔️
-🔎 Test DNS resolution	nslookup networkwalks.com	Resolved to 192.232.216.135 ✔️
-🧰 Verify Nmap	nmap --version	Nmap 7.99 ✔️
+# 🔎 Lab Verification
+
+| ✅ Test | 🧾 Command | 🎯 Result |
+|---|---|---|
+| 🌐 Check IP address | `ip a` | `eth0 = 10.0.0.2/24` ✔️ |
+| 📡 Test gateway | `ping 10.0.0.1` | 5/5 replies, 0% packet loss ✔️ |
+| 🔎 Test DNS resolution | `nslookup networkwalks.com` | Resolved to `192.232.216.135` ✔️ |
+| 🧰 Verify Nmap | `nmap --version` | Nmap 7.99 ✔️ |
 1. Test Gateway Connectivity
 I pinged the gateway to confirm that my Kali VM can reach the lab network.
 
@@ -115,8 +118,10 @@ Documentation: why recording commands, configuration and screenshots matters in 
 I built this laboratory strictly for educational purposes only. I will only test systems that I own or have explicit written permission to test.
 
 🔗 Tools & Resources
-VirtualBox: https://virtualbox.org/wiki/Downloads
-Kali Linux: https://kali.org/get-kali
+VirtualBox: https://virtualbox.org/wiki/Downloads \
+Kali Linux: https://kali.org/get-kali \
+
+
 👤 Author
 Mayuresh Sangale
 Third year Computer Engineering student
